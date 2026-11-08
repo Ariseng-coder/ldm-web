@@ -3,29 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="estilo/estilo.css">
-
+  <!-- Como aún no usas CSS, puedes dejar esta línea comentada o borrarla temporalmente -->
+  <!-- <link rel="stylesheet" href="estilo/estilo.css"> -->
 </head>
 
-<body>
+<body bgcolor="#f4f4f4">
   <header>
     <h1>Mis Prácticas</h1>
   </header>
 
-  <div class="contenedor">
+  <!-- Tabla invisible para poner la imagen a la izquierda y el texto a la derecha -->
+  <table border="0" cellspacing="20" cellpadding="0">
+    <tr>
+      <!-- Columna izquierda: Imagen -->
+      <td valign="top">
+        <img src="imagen_portada/numbers.jpg" alt="Foto de perfil" class="foto" width="400">
+      </td>
 
-   
-    <div class="izquierda">
-      <img src="imagen_portada/numbers.jpg" alt="Foto de perfil" class="foto">
-    </div>
-
-   
-    <div class="derecha">
-      <ul>
-        <li><a href="curriculum_básico/index.html">Práctica 1</a></li>
-      </ul>
-    </div>
-
-  </div>
+      <!-- Columna derecha: Lista de prácticas -->
+      <td valign="top">
+        <h2>Mis Prácticas</h2>
+        <ul>
+          <li><a href="curriculum_básico/index.html">Currículum</a></li>
+        </ul>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
