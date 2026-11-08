@@ -5,30 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body bgcolor="#d9d2c9">
-  <!-- Espaciador superior para bajar todo el contenido desde la esquina -->
-  <table border="0" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-      <td height="80"></td>
-    </tr>
-  </table>
+<!-- Ponemos la foto del camaleón como fondo de toda la pantalla y quitamos márgenes -->
+<body style="background-image: url('imagen_portada/camaleon.jpg'); background-size: cover; background-attachment: fixed; background-position: center; margin: 0; padding: 40px;">
 
-  <!-- Tabla principal con la foto a la izquierda y el texto al lado -->
-  <table border="0" cellspacing="30" cellpadding="0" align="center">
+  <!-- Título arriba centrado -->
+  <h1 style="color: white; text-align: center; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); font-family: sans-serif;">Mis prácticas</h1>
+
+  <!-- Tabla invisible para poner la foto a la izquierda y los enlaces a la derecha sin fondo blanco -->
+  <table border="0" cellspacing="40" cellpadding="0" align="center" style="margin-top: 20px;">
     <tr>
-      <!-- Foto a la izquierda -->
-      <td valign="middle">
-        <img src="imagen_portada/numbers.jpg" alt="Foto de portada" width="800">
+      <!-- Columna izquierda: La foto de la pizarra -->
+      <td valign="top" align="center">
+        <img src="imagen_portada/numbers.jpg" alt="Web Dev Quests" width="450" style="border-radius: 8px; box-shadow: 0px 4px 15px rgba(0,0,0,0.5);">
       </td>
 
-      <!-- Texto a la derecha -->
-      <td valign="middle">
-        <h1>Mis Prácticas</h1>
-        <ul>
-          <li><h2><a href="curriculum_básico/index.html">Currículum</a></h2></li>
+      <!-- Columna derecha: Tus prácticas flotando directamente sobre el fondo (sin caja blanca) -->
+      <td valign="top" style="color: white; font-family: sans-serif; text-shadow: 1px 1px 3px rgba(0,0,0,0.9);">
+        <h2 style="margin-top: 0; color: #76ff03;">Prácticas disponibles:</h2>
+        <ul style="line-height: 1.8; font-size: 18px;">
+          <li><a href="curriculum_básico/index.html" style="color: #ffffff; text-decoration: underline;">Práctica 1 - Currículum</a></li>
+          <li><a href="#" style="color: #ffffff; text-decoration: underline;">Práctica 2 - Formulario</a></li>
+          <li><a href="#" style="color: #ffffff; text-decoration: underline;">Práctica 3 - Varias páginas</a></li>
+          <li><a href="#" style="color: #ffffff; text-decoration: underline;">Float - Web tatuajes</a></li>
+          <li><a href="#" style="color: #ffffff; text-decoration: underline;">Flex - Web tatuajes</a></li>
+          <li><a href="#" style="color: #ffffff; text-decoration: underline;">Flex - Ejercicio Clase (en proceso)</a></li>
+          <li><a href="#" style="color: #ffffff; text-decoration: underline;">Bootstrap - Portfolio</a></li>
+          <li><a href="#" style="color: #ffffff; text-decoration: underline;">Javascript / generador de memes</a></li>
+          <li><a href="#" style="color: #ffffff; text-decoration: underline;">Javascript / time's up</a></li>
         </ul>
       </td>
     </tr>
   </table>
+
 </body>
 </html>
